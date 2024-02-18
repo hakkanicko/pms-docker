@@ -29,4 +29,4 @@ jobs:
           file: ./Dockerfile.arm64
           platforms: linux/arm64
           push: true
-          tags: pms-docker:latest
+          tags: ${{ secrets.DOCKER_REGISTRY }}/pms-docker:latest
